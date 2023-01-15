@@ -1,7 +1,7 @@
 # A project to demonstrate key microservice components
 
 ## TODO:
-- [ ] Usecase & process flow
+- [x] Usecase & process flow
 - [ ] Development of services using grpc
 - [ ] Event Driven
 - [ ] Distributed Tracing
