@@ -1,0 +1,50 @@
+{
+  "rides": [
+    {
+      "from_place_id": 1,
+      "to_place_id": 2,
+      "user_id": 1,
+      "from_date": "2023-04-23T18:00:00.000Z",
+      "to_date": "2023-04-23T20:00:00.000Z",
+      "cost": 250.00
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@example.com"
+    }
+  ],
+  "past_rides": [],
+  "places": [
+    {
+      "id": 1,
+      "place": "Chennai"
+    },
+    {
+      "id": 2,
+      "place": "Pondicherry"
+    },
+    {
+      "id": 3,
+      "place": "Trichy"
+    },
+    {
+      "id": 4,
+      "place": "Madurai"
+    },
+    {
+      "id": 5,
+      "place": "Thanjavur"
+    },
+    {
+      "id": 6,
+      "place": "Villupuram"
+    },
+    {
+      "id": 7,
+      "place": "Cuddalore"
+    }
+  ]
+}
