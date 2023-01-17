@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+
+package rideservice;
+
+option java_package = "com.msdemo.rideservice.grpc";
+option java_multiple_files = true;
+
+service RideService {
+  rpc findRides(RideSearchRequest) returns (RideSearchResponse){};
+}
+
+message RideSearchRequest{
+
+}
+
+message RideSearchResponse{
+
+}
