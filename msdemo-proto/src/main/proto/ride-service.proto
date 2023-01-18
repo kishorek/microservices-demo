@@ -1,19 +1,37 @@
 syntax = "proto3";
 
-
 package rideservice;
 
 option java_package = "com.msdemo.rideservice.grpc";
 option java_multiple_files = true;
 
+enum RideStatus{
+  RIDE_ACCEPTED = 0;
+  RIDE_REJECTED = 1;
+  RIDE_PENDING = 2;
+}
+
 service RideService {
   rpc findRides(RideSearchRequest) returns (RideSearchResponse){};
+  rpc postRide(RideRequest) returns (RideResponse){};
+}
+
+message RideRequest{
+  string from = 1;
+  string to = 2;
+}
+
+message RideResponse{
+  string from = 1;
+  string to = 2;
+  string driverName = 3;
 }
 
 message RideSearchRequest{
-
+  string from = 1;
+  string to = 2;
 }
 
 message RideSearchResponse{
-
+  repeated RideResponse rides = 1;
 }
