@@ -22,9 +22,10 @@ message RideRequest{
 }
 
 message RideResponse{
-  string from = 1;
-  string to = 2;
-  string driverName = 3;
+  int64 id = 1;
+  string from = 2;
+  string to = 3;
+//  string driverName = 3;
 }
 
 message RideSearchRequest{
